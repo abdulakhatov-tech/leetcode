@@ -357,3 +357,54 @@ console.log([] + []) // empty string
 console.log(0.1+0.2);
 
 console.log(('hi').__proto__.__proto__.__proto__);
+
+
+//13
+let menu = {
+    width: 150,
+    height: 200,
+    title: 'Object menu'
+}
+
+function newObject(obj){
+    for(let key in obj){
+        if( typeof obj[key] === 'number'){
+            obj[key] *= 3;
+        }
+    }
+    return obj
+}
+
+console.log(newObject(menu))
+
+// 14
+function remove(array, index){
+    return array.slice(0, index).concat(array.slice(index+1))
+}
+
+console.log(remove(['a','b','c','d','e'] , 1));
+
+//15
+// #1
+console.log(Math.max(-12, -15, -25, -15, -36, 7, 48));
+
+// #2
+const max = [-12, -15, -25, -15, -36, 7, 48]
+console.log(Math.max(...max));
+
+//16
+for(let belgi = '*'; belgi.length < 8; belgi+='*'){
+    console.log(belgi);
+}
+
+//17
+let natija = '';
+let qator1 = ' * * * * * * * *'
+let qator2 = '* * * * * * * *'
+for (let i = 0; i < 8; i++){
+    if(i%2==0){
+        natija += qator1 + '\n'
+    }else{
+        natija += qator2 + '\n'
+    }
+}
