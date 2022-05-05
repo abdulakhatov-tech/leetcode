@@ -408,3 +408,81 @@ for (let i = 0; i < 8; i++){
         natija += qator2 + '\n'
     }
 }
+
+console.log(natija);
+
+// 18
+function min(a,b){
+    return (a > b ? b : a)
+}
+
+console.log(min(5,15));
+console.log(min(0,-10));
+
+// 19
+let num = 12345
+console.log(+num.toString().split('').reverse().join(''));
+
+// 20
+let nums = [1,2,2,3]
+console.log([... new Set(nums)]);
+
+
+// let func = function () {
+//     {
+//         (function() {
+//             let l = 'let';
+//             var v = 'var';
+//         })();
+
+//         console.log(v);
+//         console.log(l);
+//     }
+// }
+
+// func()
+
+// console.log(5 < 6 < 7); // true
+// console.log(true < 7);
+// console.log(1 < 7);
+
+// console.log(7 > 6 > 5); // false
+// console.log(true > 5);
+// console.log(1 > 5);
+
+
+let profile = {
+    name: 'techsith'
+}
+
+Object.freeze(profile) // this does not allow to add, modify, delete
+Object.seal(profile) // this only allows to modify
+
+profile.name = 'asdf'
+
+
+const x = [1,2,3]
+x[-1]=-1
+console.log(x);
+console.log(x[x.indexOf(10000)]);
+
+
+
+console.log(Number.MIN_VALUE)
+console.log(Number.MAX_VALUE)
+
+console.log(NaN === NaN); //false
+
+// mock interview - 1
+
+let x1 = {
+    a: 1,
+    b: 2
+}
+console.log(Object.entries(x1).map((item) => item[1]));
+const new2 = []
+for(value of Object.values(x1)){
+    new2.push(value)
+}
+
+console.log(new2);
