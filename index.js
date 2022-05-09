@@ -486,3 +486,51 @@ for(value of Object.values(x1)){
 }
 
 console.log(new2);
+// [ 1, 2 ]
+// [ 1, 2 ]
+
+
+// ---------------------
+
+let obj1 = {
+    a: 1,
+    b: 2,
+    getA(){
+        console.log(this.a);
+        return this;
+    },
+    getB(){
+        console.log(this.b);
+        return this;
+    },
+}
+
+obj1.getA().getB();
+
+// ---------------------
+
+const a = function(x){
+    this.x = x;
+    this.getX = function(){
+        return this.x;
+    }
+
+
+    
+};
+
+const b = function (x,y){
+    this.y = y;
+    a.call(this, x )
+    
+    this.getY = function(){
+        return this.y
+    }
+};
+
+const newB = new b('x', 'y');
+
+newB.getX();
+newB.getY();
+
+

@@ -78,8 +78,96 @@
 // what is arrow function in javascript?
 // an arrow function expression is a compact alternative 
 // to a traditional function expression
-function hello(a, b) {
-    return a + b + 1;
-}
+// function hello(a, b) {
+//     return a + b + 1;
+// }
 
-hello = (a, b) => a + b + 1
+// hello = (a, b) => a + b + 1
+
+
+// what is canvas in HTML?
+// easy and powerful way to draw diagrams in HTML
+// used for drawing graphs, photo compositions, create animations etc
+// use javascript for drawing
+
+
+
+
+// what is RWD? 
+// Responsive web design
+
+// Difference between css and scss?
+
+
+
+// class Car {
+//     constructor(name, model) {
+//         this.model = model;
+//         this.name = name;
+//     }
+//     start(){
+//         console.log(`Name of the car is ${this.name}. Speed - ${this.model}`)
+//     }
+    
+// }
+
+// const bmw = new Car(620, 'BMW')
+// bmw.start()
+
+
+// Inheritance
+// class Car {
+//     constructor(name, model) {
+//         this.model = model;
+//         this.name = name;
+//     }
+//     start(){
+//         console.log(this.name)
+//     }
+
+//     end(){
+//         console.log('Car stopped')
+//     }
+    
+// }
+
+// class ElectricCar extends Car{
+//     dashboard(){
+//         console.log('child method');
+//     }
+//     start() {
+//         super.start()
+//         super.end();
+//         this.dashboard();
+//     }
+// }
+
+
+// const tesla = new ElectricCar('Tesla', 'A320')
+// tesla.start()
+
+
+
+// const duplicatedArray = [14,23,5,34,23,12,14,12]
+
+// const duplicates = duplicatedArray.filter((element, index, array) => {
+//     return array.indexOf(element) !== index
+// })
+
+// console.log(duplicates);
+
+
+// how to find the count of duplicates in an array?
+const numbers = [14,23,5,34,23,12,14,12,23]
+
+const countOfDuplicates = numbers.reduce((obj, num) => {
+    if(obj[num] == undefined) {
+        obj[num] = 1
+        return obj;
+    }else {
+        obj[num]++;
+        return obj
+    }
+}, {})
+
+console.log(countOfDuplicates)
