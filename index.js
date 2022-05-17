@@ -563,12 +563,66 @@ function shuffleTheArray(nums, n){
     let arr1 = nums.filter((item, index)=> index <= (len-1)/2 && item)
     let arr2 = nums.filter((item, index)=> index >= (len-1)/2 && item)
     let total = [];
-    for(let i = 0; i < len; i++){
+    for(let i = 0; i < len/2; i++){
         total.push(arr1[i])
         total.push(arr2[i])
-        console.log(i);
     }
-    // return total
+    return total
 }
 
-console.log(shuffleTheArray([2,5,1,3,4,7], 3));
+console.log(shuffleTheArray([1,2,3,4,4,3,2,1], 3));
+
+
+// #5 -1
+function twoSum(nums, target){
+    let index = [];
+    for(let i = 0; i < nums.length; i++){
+        for(let b = 1; b < nums.length; b++){
+            if(nums[i] + nums[b] === target && i !== b){
+                index.push(i)
+                index.push(b)
+                return index
+            }
+            
+        }
+    }
+    
+}
+
+console.log(twoSum([2,5,5,11],13));
+
+
+// #6 - 2
+function addTwoNumbers(l1, l2){
+    return (+l1.reverse().join('') + +l2.reverse().join('')).toString().split('').map((item) => +item).reverse()
+}
+
+console.log(addTwoNumbers([2,4,3], [5,6,4]));
+
+
+// #7
+function lengthOfLongestSubstring(s){
+   
+}
+
+console.log('abcabcbb');
+
+
+let x = 23;
+console.log(x.toString(2));
+
+
+
+function dontGiveMeFive(start, end){
+    var count = 0
+    if(start < end){
+    for(let i = start; i <= end; i++){
+      if(!i.toString().includes('0') && !i.toString().includes('5')){
+          count++
+      }
+    }
+    return count
+  }
+  }
+
+console.log(dontGiveMeFive(1,9));
