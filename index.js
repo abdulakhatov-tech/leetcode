@@ -612,12 +612,12 @@ let x = 23;
 console.log(x.toString(2));
 
 
-
+// code wars v7 1
 function dontGiveMeFive(start, end){
     var count = 0
     if(start < end){
     for(let i = start; i <= end; i++){
-      if(!i.toString().includes('0') && !i.toString().includes('5')){
+      if(!i.toString().includes('5')){
           count++
       }
     }
@@ -626,3 +626,16 @@ function dontGiveMeFive(start, end){
   }
 
 console.log(dontGiveMeFive(1,9));
+
+
+// codewars v7 2
+console.log("a".padStart(3, '*'));
+console.log(String.raw`\a`.length);
+
+
+let text = 'testing: 1, 2, 3';
+let pattern = /\d+/g;
+console.log(pattern.test(text));
+console.log(text.search(pattern));
+console.log(text.match(pattern));
+console.log(text.replace(pattern, ''));
