@@ -9,7 +9,7 @@ Approach:
 I strive to provide clear and concise solutions with explanations. My goal is not just to solve the problems but also to share insights into the thought process and techniques used to arrive at the solutions.
 
 Programming Languages:
-Solutions are implemented in [Programming Language(s)].
+Solutions are implemented in JavaScript.
 
 Feel free to explore the repository and use the solutions as a reference or for learning purposes. If you have any suggestions or improvements, please don't hesitate to open an issue or submit a pull request.
 
