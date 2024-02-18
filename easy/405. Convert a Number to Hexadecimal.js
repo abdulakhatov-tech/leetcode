@@ -9,6 +9,6 @@ function toHex(num) {
   return num.toString(16);
 }
 
-// let result = toHex(26);
+// let result = toHex(26);`
 let result = toHex(-1);
 console.log(result);
