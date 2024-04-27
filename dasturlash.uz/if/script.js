@@ -223,14 +223,30 @@
 // Agar teng yonli bo'lsa  'isosceles' so'zini konsolga chiqaring.
 // Agar ixtiyoriy  bo'lsa  'scalene'  so'zini konsolga chiqaring.
 
-let a = 40;
-let b = 20;
-let c = 50;
+// let a = 40;
+// let b = 20;
+// let c = 50;
 
-if (a === b && b === c) console.log("equilateral");
-if (a === b && a !== c && b !== c) console.log("isosceles");
-if (a !== b && a !== c && b !== c) console.log("scalene");
+// if (a === b && b === c) console.log("equilateral");
+// if (a === b && a !== c && b !== c) console.log("isosceles");
+// if (a !== b && a !== c && b !== c) console.log("scalene");
 
 // ===================================================================================
+// #16
+// Nechtasi musbat
+
+//  a, b, c sonlari berilgan.
+
+// Berilgan 3 ta sondan nechtasi musbat ekanligini aniqlovchi dastur yozing
+// va musbat sonlar sonini konsolga chiqaring.
+
+// let a = 30;
+// let b = 40;
+// let c = 140;
+// let counter = 0;
+// if (a > 0) counter++;
+// if (b > 0) counter++;
+// if (c > 0) counter++;
+// console.log(counter);
 // ===================================================================================
 // ===================================================================================
