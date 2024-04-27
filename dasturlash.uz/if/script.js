@@ -331,3 +331,19 @@
 // }
 
 // ===================================================================================
+// #19
+// Sonlar o'qidagi masofa
+
+// Misol Sharti
+// Sonlar o'qida a,b sonlari berilgan. Ular orasidagi masofani toping.
+
+// let a = 30;
+// let b = 10;
+
+// let sum = a - b;
+
+// if (sum < 0) {
+//    console.log(sum * -1);
+// } else {
+//    console.log(sum);
+// }
