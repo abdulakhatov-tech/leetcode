@@ -52,5 +52,16 @@
 //    console.log("toq");
 // }
 // ===================================================================================
+// #5
+// Ikkita sondan kattasi
 
+//  a va b sonlari berilgan.  Berilgan ikkita sondan kattasini konsolga chiqaring.
+//  Agar ular teng bo'lsa 'Voy ular teng' yozuvi chiqsin.
+
+let a = 10;
+let b = 20;
+
+if (a > b) console.log(a);
+if (b > a) console.log(b);
+if (a === b) console.log("Voy ular teng");
 // ===================================================================================
