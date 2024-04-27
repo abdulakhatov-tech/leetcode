@@ -30,3 +30,12 @@
 // let b = (a - (a % 3)) / 3;
 
 // console.log(b);
+// #3
+// Qoldig'ini aniqlash
+
+// a soni berilgan. a sonini 3ga bo'lgandagi qoldig'ini kansolga chiqaring.
+
+// let a = 10;
+// let qoldiq = a % 3;
+// console.log(qoldiq);
+// ===================================================================================
