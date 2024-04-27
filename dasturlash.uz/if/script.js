@@ -249,4 +249,16 @@
 // if (c > 0) counter++;
 // console.log(counter);
 // ===================================================================================
+// #16
+// Kichik son
+
+// a, b sonlari berilgan.
+// Berilgan ikkita sondan  kichigini  toping  va shu sonni konsolga chiqaring.
+// Agar ular teng bo'lsa 'teng' so'zini konsolga chiqaring.
+
+// let a = 10;
+// let b = 20;
+// if (a > b) console.log(b);
+// if (b > a) console.log(a);
+
 // ===================================================================================
