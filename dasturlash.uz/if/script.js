@@ -58,10 +58,23 @@
 //  a va b sonlari berilgan.  Berilgan ikkita sondan kattasini konsolga chiqaring.
 //  Agar ular teng bo'lsa 'Voy ular teng' yozuvi chiqsin.
 
+// let a = 10;
+// let b = 20;
+
+// if (a > b) console.log(a);
+// if (b > a) console.log(b);
+// if (a === b) console.log("Voy ular teng");
+// ===================================================================================
+// #6
+// a, b, c  katta son
+
+// Misol Sharti
+//  a, b, c  sonlari berilgan.  Shu sonlardan eng kattasini toping.
+
 let a = 10;
 let b = 20;
-
-if (a > b) console.log(a);
-if (b > a) console.log(b);
-if (a === b) console.log("Voy ular teng");
+let c = 30;
+if ((a > b && b > c) || (a > c && c > b)) console.log(a);
+if ((b > a && a > c) || (b > c && c > a)) console.log(b);
+if ((c > a && a > b) || (c > b && b > a)) console.log(c);
 // ===================================================================================
