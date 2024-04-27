@@ -177,3 +177,19 @@
 // if (son === weekDayIndexes[0]) console.log("Yakshanba");
 
 // ===================================================================================
+
+// #13
+// Uchburchakning ichki burchaklari
+
+// a,b,c sonlari berilgan . Shu sonlar uchburchakning ichki burchaklari ekanligini aniqlang.
+// Agar berilgan  sonlar uchburchakning burchaklari bo'lsa ,
+// true konsolga chiqaring bo'lmasa false konsolga chiqaring.
+
+// let a = 30;
+// let b = 40;
+// let c = 140;
+
+// if (a + b + c > 180) console.log(false);
+// if (a + b + c <= 180 && a + b + c >= 0) console.log(true);
+
+// ===================================================================================
