@@ -193,3 +193,22 @@
 // if (a + b + c <= 180 && a + b + c >= 0) console.log(true);
 
 // ===================================================================================
+// #14
+
+// Uchburchakning tomonlari
+
+// Misol Sharti
+// a,b,c sonlari berilgan . Shu sonlar uchburchakning tomonlari ekanligini aniqlang.
+// Agar kelgan sonlar uchburchakning tomonlari bo'lsa ,true  konsolga  chiqaring,
+// bo'lmasa false konsolga chiqaring.
+
+// let a = 20;
+// let b = 25;
+// let c = 30;
+
+// if (a + b > c && a + c > b && b + c > a) {
+//    console.log(true);
+// } else {
+//    console.log(false);
+// }
+// ===================================================================================
