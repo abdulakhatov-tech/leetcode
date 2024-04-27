@@ -262,3 +262,19 @@
 // if (b > a) console.log(a);
 
 // ===================================================================================
+
+// #17
+// O'rtacha qiymat
+
+// a, b, c sonlari berilgan. Berilgan uchta sonning o'rtacha qiymatini  hisoblovchi dastur yozing
+// va shu sonni konsolga chiqaring.
+
+// let a = 30;
+// let b = 230;
+// let c = 140;
+
+// if ((a > b && b > c) || (c > b && b > a)) console.log(b);
+// if ((a > c && c > b) || (b > c && c > a)) console.log(c);
+// if ((b > a && a > c) || (c > a && a > b)) console.log(a);
+
+// ===================================================================================
