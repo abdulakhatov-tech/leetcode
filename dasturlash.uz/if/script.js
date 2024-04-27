@@ -156,3 +156,24 @@
 // if (typeof c !== "string") console.log("nono");
 
 // ===================================================================================
+
+// #12
+// Xafta kuni
+
+// Misol Sharti
+// Berilgan son hafta kunining qaysi kuniga to'g'ri keladi .
+// Agar kelgan son 1 ga teng bo'lsa 'Dushanba' ni konsolga chiqaring,
+// Agar kegan son ikkiga teng bo'lsa  'Seshanba' ni konsolga chiqaring va hz ..,
+// Agar hafta kuniga to'g'ri kelmasa 'none' konsolga chiqsin.
+
+// let son = 1;
+// let weekDayIndexes = [0, 1, 2, 3, 4, 5, 6, 7];
+// if (son === weekDayIndexes[1]) console.log("Dushanba");
+// if (son === weekDayIndexes[2]) console.log("Seshanba");
+// if (son === weekDayIndexes[3]) console.log("Chorshanba");
+// if (son === weekDayIndexes[4]) console.log("Payshanba");
+// if (son === weekDayIndexes[6]) console.log("Juma");
+// if (son === weekDayIndexes[7]) console.log("Shanba");
+// if (son === weekDayIndexes[0]) console.log("Yakshanba");
+
+// ===================================================================================
