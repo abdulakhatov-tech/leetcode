@@ -211,4 +211,26 @@
 // } else {
 //    console.log(false);
 // }
+
+// ===================================================================================
+// #15
+// Uchburchak shakli
+
+//  a,b,c sonlari berilgan. Bu sonlar uchburchakning 3ta tomonidir.
+//  Uchburchak ning shakli qanday ekanligini aniqlang.
+
+// Agar teng tomonli bo'lsa  'equilateral' so'zini konsolga chiqaring.
+// Agar teng yonli bo'lsa  'isosceles' so'zini konsolga chiqaring.
+// Agar ixtiyoriy  bo'lsa  'scalene'  so'zini konsolga chiqaring.
+
+let a = 40;
+let b = 20;
+let c = 50;
+
+if (a === b && b === c) console.log("equilateral");
+if (a === b && a !== c && b !== c) console.log("isosceles");
+if (a !== b && a !== c && b !== c) console.log("scalene");
+
+// ===================================================================================
+// ===================================================================================
 // ===================================================================================
