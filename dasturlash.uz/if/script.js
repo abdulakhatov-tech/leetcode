@@ -390,3 +390,28 @@
 // }
 
 // ===================================================================================
+
+// #22
+// 3ta son
+// Misol Sharti
+// a, b, c sonlar berilgan (0 emas).
+
+// Agar  3 ta son ham toq bo'lsa 1 ni konsolga chiqaring.
+// Agar 3 ta son ham juft bo'lsa 2 ni konsolga chiqaring.
+// Agar xohlagan bittasi toq bo'lsa 3 ni konsolga chiqaring.
+// Agar shartlarni qanoatlantirmasa  0 ni konsolga chiqaring.
+
+// let a = 30;
+// let b = 40;
+// let c = 140;
+
+// if (a % 2 !== 0 && b % 2 !== 0 && c % 2 !== 0) {
+//    console.log(1);
+// } else if (a % 2 === 0 && b % 2 === 0 && c % 2 === 0) {
+//    console.log(2);
+// } else if (a % 2 !== 0 || b % 2 !== 0 || c % 2 !== 0) {
+//    console.log(3);
+// } else {
+//    console.log(0);
+// }
+// ===================================================================================
