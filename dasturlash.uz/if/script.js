@@ -130,3 +130,13 @@
 //    console.log(false);
 // }
 // ===================================================================================
+// #10
+// Berilgan char sonmi
+
+// c char berilgan. Berilgan  char alfavit  yoki raqam ekanligini aniqlang.
+// Agar alfavit bo'lsa 'alpha' ni  konsolga chiqaring,  agar son bo'lsa 'son' ni  konsolga chiqaring.
+
+// let c = "a";
+// if (typeof c === "number") console.log("son");
+// if (typeof c === "string") console.log("alpha");
+// ===================================================================================
