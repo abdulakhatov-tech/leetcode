@@ -18,3 +18,15 @@
 //    n += 12;
 // }
 // console.log(n);
+
+// ===================================================================================
+// #2
+// Butun qism
+
+// Berilgan a sonini 3ga bo'lgandagi butun  qismini b o'zgaruvchiga
+// joylang va b sonini konsolga chiqaring.
+
+// let a = 120;
+// let b = (a - (a % 3)) / 3;
+
+// console.log(b);
