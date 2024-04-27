@@ -278,3 +278,31 @@
 // if ((b > a && a > c) || (c > a && a > b)) console.log(a);
 
 // ===================================================================================
+
+// #18
+// Sonlarni taqqoslab tashlang
+
+// Misol Sharti
+// a, b, c sonlar berilgan.
+
+// Agar sonlar o'sish tartibida  joylashgan bo'lsa  1 ni konsolga chiqaring.
+// Agar kamayish tartibda bo'lsa 2 konsolga chiqaring.
+// Agar eng kattasi b bo'sa  b ni konsolga chiqaring.
+// Agar ular teng bo'lsa 5 ni konsolga chiqaring.
+// Bo'lmasa 0 ni konsolga chiqaring.
+
+// let a = 30;
+// let b = 40;
+// let c = 140;
+
+// if (a > b && b > c) {
+//    console.log(1);
+// } else if (a < b && b < c) {
+//    console.log(2);
+// } else if (b > a && b > c) {
+//    console.log(b);
+// } else {
+//    console.log(0);
+// }
+
+// ===================================================================================
