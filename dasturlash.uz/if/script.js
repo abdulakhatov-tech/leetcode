@@ -101,3 +101,16 @@
 //    console.log(false);
 // }
 // ===================================================================================
+// #8
+// Son 3 va 4 ga bo'linadimi
+
+// Berilgan son 3 va 4 ga bo'linadimi? Agar bo'linsa konsolga 'true'  bo'lmasa falseni chiqaring.
+
+// let son = 12;
+// if (son % 3 === 0 && son % 4 === 0) {
+//    console.log(true);
+// } else {
+//    console.log(false);
+// }
+
+// ===================================================================================
