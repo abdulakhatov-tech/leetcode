@@ -306,3 +306,28 @@
 // }
 
 // ===================================================================================
+
+// #19
+// O'zaro teng sonlar
+
+// Misol Sharti
+// a, b, c sonlar berilgan.
+
+// Agar shu solarning ikkitasi o'zaro teng bo'lsa  teng bo'lmagan sonni
+//  konsolga chiqaring, aks holda 0 ni chiqaring.
+
+// let a = 40;
+// let b = 40;
+// let c = 140;
+
+// if (a === b) {
+//    console.log(c);
+// } else if (a === c) {
+//    console.log(b);
+// } else if (b === c) {
+//    console.log(a);
+// } else {
+//    console.log(0);
+// }
+
+// ===================================================================================
