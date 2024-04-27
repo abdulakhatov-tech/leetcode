@@ -371,3 +371,22 @@
 //    console.log(3);
 // }
 // ===================================================================================
+// #21
+// Barchasi musbatmi
+
+// Misol Sharti
+// a, b, c, d sonlar berilgan.
+
+// Agar ularning qiymati barchasi musbat   bo'lsa true konsolga chiqaring bo'lmasa false ni konsolga chiqaring.
+
+// let a = 30;
+// let b = 40;
+// let c = 140;
+
+// if (a > 0 && b > 0 && c > 0) {
+//    console.log(true);
+// } else {
+//    console.log(false);
+// }
+
+// ===================================================================================
