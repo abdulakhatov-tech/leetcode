@@ -347,3 +347,27 @@
 // } else {
 //    console.log(sum);
 // }
+
+// ===================================================================================
+// #20
+// Sonlar nechi xonali
+
+// Misol Sharti
+// a soni berilgan. 1 - 999 sonlar orasida.
+
+// Agar a soni 1 honali son bo'lsa 1 ni return qiling.
+// Agat a soni 2 honali son bo'lsa 2 ni return qiling.
+// Agar a soni 3 honali bo'lsa 3 ni return qiling.
+
+// let a = 999;
+
+// if (a >= 0 && a < 10) {
+//    console.log(1);
+// }
+// if (a >= 10 && a < 100) {
+//    console.log(2);
+// }
+// if (a >= 100 && a < 1000) {
+//    console.log(3);
+// }
+// ===================================================================================
