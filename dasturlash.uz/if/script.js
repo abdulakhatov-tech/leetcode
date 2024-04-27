@@ -71,10 +71,21 @@
 // Misol Sharti
 //  a, b, c  sonlari berilgan.  Shu sonlardan eng kattasini toping.
 
-let a = 10;
-let b = 20;
-let c = 30;
-if ((a > b && b > c) || (a > c && c > b)) console.log(a);
-if ((b > a && a > c) || (b > c && c > a)) console.log(b);
-if ((c > a && a > b) || (c > b && b > a)) console.log(c);
+// let a = 10;
+// let b = 20;
+// let c = 30;
+// if ((a > b && b > c) || (a > c && c > b)) console.log(a);
+// if ((b > a && a > c) || (b > c && c > a)) console.log(b);
+// if ((c > a && a > b) || (c > b && b > a)) console.log(c);
+// ===================================================================================
+// #6
+// Musbat  vs Manfiy
+
+//  a soni berilgan. Sonning musbat yoki manfiy ekanligini aniqlang.
+// Son 0 ga teng bo'lsa, 0 ni konsolga chiqaring.
+
+// let a = 10;
+// if (a > 0) console.log("musbat");
+// if (a < 0) console.log("manfiy");
+// if (a === 0) console.log(0);
 // ===================================================================================
