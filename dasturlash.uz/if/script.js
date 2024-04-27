@@ -89,3 +89,15 @@
 // if (a < 0) console.log("manfiy");
 // if (a === 0) console.log(0);
 // ===================================================================================
+// #7
+// Son 5 ga bo'linadimi?
+
+//  a soni berilgan. Berilgan son 5 ga bo'linadimi? Agar bo'linsa  konsolga true bo'lmasa false chiqaring.
+
+// let a = 10;
+// if (a % 5 === 0) {
+//    console.log(true);
+// } else {
+//    console.log(false);
+// }
+// ===================================================================================
