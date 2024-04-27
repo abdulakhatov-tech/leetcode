@@ -39,3 +39,18 @@
 // let qoldiq = a % 3;
 // console.log(qoldiq);
 // ===================================================================================
+// #4
+// Juft yoki Toq son
+
+// Sonning  juft  yoki  toqligini  aniqlang.  Agar  juft bo'lsa 'juft' so'zini
+// return qiling. Agar toq bo'lsa 'toq' so'zini return qiling.
+
+// let num = 10;
+// if (num % 2 === 0) {
+//    console.log("juft");
+// } else {
+//    console.log("toq");
+// }
+// ===================================================================================
+
+// ===================================================================================
