@@ -140,3 +140,19 @@
 // if (typeof c === "number") console.log("son");
 // if (typeof c === "string") console.log("alpha");
 // ===================================================================================
+// #11
+// Kichik yoki Katta alfavit
+
+// c char berilgan. Berilgan  char katta alfavit yoki kichik alfavit ekanlini aniqlang .
+
+// Agar alfavit kichik bo'lsa 'lowerCase' so'zini konsolga chiqaring,
+// Agar alfavit katta bo'lsa 'upperCase' ni chiqaring,  agar alfavit  bo'lmasa  'none' ni  chiqaring.
+
+// let c = "a";
+// if (typeof c === "string" && c.charCodeAt() >= 97 && c.charCodeAt() <= 122)
+//    console.log("lowerCase");
+// if (typeof c === "string" && c.charCodeAt() >= 65 && c.charCodeAt() <= 90)
+//    console.log("upperCase");
+// if (typeof c !== "string") console.log("nono");
+
+// ===================================================================================
