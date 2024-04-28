@@ -272,3 +272,17 @@
 
 // console.log(sum);
 // ==================================================
+function fibonacciSum(n) {
+   let fib = [0, 1];
+   let sum = 0;
+
+   for (let i = 2; i < n; i++) {
+      fib[i] = fib[i - 1] + fib[i - 2];
+      sum += fib[i];
+   }
+
+   return sum;
+}
+
+let result = fibonacciSum(15);
+console.log(result);
