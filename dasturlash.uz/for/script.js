@@ -249,18 +249,26 @@
 // console.log(teskari);
 // ==================================================
 // Sonning teskarisi
-let son = 2345;
-let teskari = 0;
+// let son = 2345;
+// let teskari = 0;
 
-// console.log(Math.floor(son / 10));
+// // console.log(Math.floor(son / 10));
 
-for (let i = son; i > 0; i = Math.floor(i / 10)) {
-   teskari = teskari * 10 + (i % 10);
-}
-if (son === teskari) {
-   console.log(true);
-} else {
-   console.log(false);
-}
+// for (let i = son; i > 0; i = Math.floor(i / 10)) {
+//    teskari = teskari * 10 + (i % 10);
+// }
+// if (son === teskari) {
+//    console.log(true);
+// } else {
+//    console.log(false);
+// }
 // ==================================================
+// Factarial
+// let n = 5;
+// let sum = 1;
+// for (let i = 1; i <= 5; i++) {
+//    sum *= i;
+// }
+
+// console.log(sum);
 // ==================================================
