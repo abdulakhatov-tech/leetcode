@@ -136,6 +136,24 @@
 
 // console.log(sum);
 // ==================================================
+// Ketma ketlik
+
+// Misol Sharti
+// a , n sonlari berilgan (a soni 1-9 o'rtasida ).
+
+// Ketma ketlikni hisoblang. a + aa + aaa + ........  nta a bo'ladi.
+
+// Yig'indini konsolga chiqarish kerak.
+
+// let a = 7;
+// let n = 5;
+// let sum = 0;
+
+// for (let i = 1; i <= n; i++) {
+//    sum += +a.toString().repeat(i);
+// }
+
+// console.log(sum);
 // ==================================================
 // ==================================================
 // ==================================================
