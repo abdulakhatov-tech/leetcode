@@ -183,6 +183,23 @@
 
 // console.log(sum);
 // ==================================================
+// Armstrong raqami
+// let n = 1634;
+// let sum = 0;
+
+// for (let i = 0; i < n.toString().length; i++) {
+//    let raqam = 1;
+//    for (let j = 0; j < n.toString().length; j++) {
+//       raqam *= n.toString()[i];
+//    }
+//    sum += raqam;
+// }
+
+// if (n === sum) {
+//    console.log("Armstron raqami", sum);
+// } else {
+//    console.log("unday raqam emas", sum);
+// }
 // ==================================================
 // ==================================================
 // ==================================================
