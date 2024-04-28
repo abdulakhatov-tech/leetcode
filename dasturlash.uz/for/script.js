@@ -238,6 +238,17 @@
 // console.log(sum);
 // ==================================================
 // Teskari son
+// let son = 2345;
+// let teskari = 0;
+
+// // console.log(Math.floor(son / 10));
+
+// for (let i = son; i > 0; i = Math.floor(i / 10)) {
+//    teskari = teskari * 10 + (i % 10);
+// }
+// console.log(teskari);
+// ==================================================
+// Sonning teskarisi
 let son = 2345;
 let teskari = 0;
 
@@ -246,7 +257,10 @@ let teskari = 0;
 for (let i = son; i > 0; i = Math.floor(i / 10)) {
    teskari = teskari * 10 + (i % 10);
 }
-console.log(teskari);
-// ==================================================
+if (son === teskari) {
+   console.log(true);
+} else {
+   console.log(false);
+}
 // ==================================================
 // ==================================================
