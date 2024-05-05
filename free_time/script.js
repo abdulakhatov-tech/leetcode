@@ -82,3 +82,18 @@
 
 // console.log(reverseArr(1485979));
 // console.log(reverseArr(623478));
+
+// ==============================================================================
+// #6
+// Create a function that takes an array of names and returns an array where only the first letter of each name is capitalized.
+
+// function capMe(arr) {
+//    let result = arr.map(
+//       (item) => `${item.slice(0, 1).toUpperCase()}${item.slice(1)}`
+//    );
+
+//    return result;
+// }
+
+// console.log(capMe(["mavis", "senaida", "letty"]));
+// console.log(capMe(["samuel", "MABELLE", "letitia", "meridith"]));
