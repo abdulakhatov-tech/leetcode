@@ -48,3 +48,21 @@
 
 // console.log(removeDups([1, 0, 1, 0]));
 // console.log(removeDups(["The", "big", "cat"]));
+
+// ==============================================================================
+// #4
+// Given an integer array, transform that array into a mirror.
+
+// function mirror(arr) {
+//    let newArr = [...arr];
+
+//    for (let i = arr.length - 2; i >= 0; i--) {
+//       newArr.push(arr[i]);
+//    }
+
+//    return newArr;
+// }
+
+// console.log(mirror([0, 2, 4, 6]));
+// console.log(mirror([1, 2, 3, 4, 5]));
+// console.log(mirror([3, 5, 6, 7, 8]));
