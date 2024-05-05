@@ -15,3 +15,17 @@
 // }
 
 // console.log(spelling("bee"));
+
+// ==============================================================================
+// #2
+// Given a word, write a function that returns the first index and the last index of a character.
+
+function charIndex(word, character) {
+   let firstIndex = word.indexOf(character);
+   let lastIndex = word.lastIndexOf(character);
+
+   return [firstIndex, lastIndex];
+}
+
+console.log(charIndex("hello", "l"));
+console.log(charIndex("circumlocution", "c"));
