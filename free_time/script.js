@@ -291,3 +291,41 @@
 // }
 
 // console.log(count(10));
+
+// ==============================================================================
+// #16
+
+// function countingSheep(arr) {
+//    let result = arr.filter((item) => !!item);
+
+//    return result.length;
+// }
+
+// console.log(
+//    countingSheep([
+//       true,
+//       true,
+//       true,
+//       false,
+//       true,
+//       true,
+//       true,
+//       true,
+//       true,
+//       false,
+//       true,
+//       false,
+//       true,
+//       false,
+//       false,
+//       true,
+//       true,
+//       true,
+//       true,
+//       true,
+//       false,
+//       false,
+//       true,
+//       true,
+//    ])
+// );
