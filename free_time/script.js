@@ -97,3 +97,69 @@
 
 // console.log(capMe(["mavis", "senaida", "letty"]));
 // console.log(capMe(["samuel", "MABELLE", "letitia", "meridith"]));
+
+// ==============================================================================
+// #7
+// Create a function that transforms a string of upvote counts into an array of numbers. Each k represents a thousand.
+
+// function transformUpvotes(str) {
+//    let strToArr = str.split(" ");
+//    let result = [];
+
+//    for (let i = 0; i < strToArr.length; i++) {
+//       console.log(strToArr[i]);
+//       let num = "";
+//       for (let k = 0; k < strToArr[i].length; k++) {
+//          if (strToArr[i][k] === "k") {
+//             num = num * 1000;
+//          } else {
+//             num += strToArr[i][k];
+//          }
+//       }
+//       result.push(num);
+//    }
+
+//    return result.map((item) => +item);
+// }
+
+// console.log(transformUpvotes("6.8k 13.5k"));
+// console.log(transformUpvotes("5.5k 8.9k 32"));
+// console.log(transformUpvotes("20.3k 3.8k 7.7k 992"));
+
+// ==============================================================================
+// #8
+// Suppose an image can be represented as a 2D array of 0s and 1s. Write a function to reverse an image. Replace the 0s with 1s and vice versa.
+
+// function reverseImage(arr) {
+//    let result = [];
+
+//    for (let i = 0; i < arr.length; i++) {
+//       let item = [];
+//       for (let k = 0; k < arr[i].length; k++) {
+//          if (arr[i][k] === 0) {
+//             item.push(1);
+//          } else {
+//             item.push(0);
+//          }
+//       }
+
+//       result.push(item);
+//    }
+
+//    return result;
+// }
+
+// console.log(
+//    reverseImage([
+//       [1, 0, 0],
+//       [0, 1, 0],
+//       [0, 0, 1],
+//    ])
+// );
+
+// console.log(
+//    reverseImage([
+//       [1, 1, 1],
+//       [0, 0, 0],
+//    ])
+// );
