@@ -175,3 +175,54 @@
 // }
 
 // console.log(sumArray([1, 2, 3]));
+
+// ==============================================================================
+// #10
+// Create a function that returns only strings with unique characters.
+
+// function filterUnique(arr) {
+//    let result = [];
+
+//    for (let i = 0; i < arr.length; i++) {
+//       let a = [];
+
+//       for (let k = 0; k < arr[i].length; k++) {
+//          if (!a.includes(arr[i][k])) {
+//             a.push(arr[i][k]);
+//          } else {
+//             a = [];
+
+//          }
+//       }
+
+//       result.push(a);
+//    }
+
+//    return result;
+// }
+
+// console.log(filterUnique(["abb", "abc", "abcdb", "aea", "bbb"]));
+// console.log(filterUnique(["88", "999", "989", "9988", "9898"]));
+
+// ==============================================================================
+// #11
+// Write a function that takes an array of numbers and returns an array with two elements:
+
+// The first element should be the sum of all even numbers in the array.
+// The second element should be the sum of all odd numbers in the array.
+
+// function sumOddAndEven(arr) {
+//    let even = arr
+//       .filter((item) => item % 2 === 0)
+//       .reduce((acc, item) => acc + item, 0);
+//    let odd = arr
+//       .filter((item) => item % 2 !== 0)
+//       .reduce((acc, item) => acc + item, 0);
+
+//    let result = [even, odd];
+
+//    return result;
+// }
+
+// console.log(sumOddAndEven([1, 2, 3, 4, 5, 6]));
+// console.log(sumOddAndEven([-1, -2, -3, -4, -5, -6]));
