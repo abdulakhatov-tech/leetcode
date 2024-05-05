@@ -163,3 +163,15 @@
 //       [0, 0, 0],
 //    ])
 // );
+
+// ==============================================================================
+// #9
+// Create a function that takes an array and returns the sum of all items in the array.
+
+// function sumArray(arr) {
+//    let result = arr.reduce((acc, item) => acc + item, 0);
+
+//    return result;
+// }
+
+// console.log(sumArray([1, 2, 3]));
