@@ -263,3 +263,16 @@
 
 // console.log(word("one"));
 // console.log(word("two"));
+
+// ==============================================================================
+// #14
+// Create a function that takes as a parameter an array of "stringified" numbers and returns an array of numbers.
+
+// function toNumberArray(arr) {
+//    let result = arr.map((item) => +item);
+
+//    return result;
+// }
+
+// console.log(toNumberArray(["9.4", "4.2"]));
+// console.log(toNumberArray(["9.5", "8.8"]));
