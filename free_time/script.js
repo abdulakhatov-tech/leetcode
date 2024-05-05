@@ -329,3 +329,20 @@
 //       true,
 //    ])
 // );
+
+// ==============================================================================
+// #17
+
+// function str_count(str, character) {
+//    let count = 0;
+
+//    for (let i = 0; i < str.length; i++) {
+//       if (str[i] === character) {
+//          count++;
+//       }
+//    }
+
+//    return count;
+// }
+
+// console.log(str_count("Hello", "o"));
