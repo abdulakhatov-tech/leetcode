@@ -226,3 +226,17 @@
 
 // console.log(sumOddAndEven([1, 2, 3, 4, 5, 6]));
 // console.log(sumOddAndEven([-1, -2, -3, -4, -5, -6]));
+
+// ==============================================================================
+// #12
+// Create a function that takes an array and a string as arguments and returns the index of the string.
+
+// function findIndex(arr, str) {
+//    let result = arr.indexOf(str);
+
+//    return result;
+// }
+
+// console.log(findIndex(["hi", "edabit", "fgh", "abc"], "fgh"));
+// console.log(findIndex(["Red", "blue", "Blue", "Green"], "blue"));
+// console.log(findIndex(["a", "g", "y", "d"], "d"));
