@@ -66,3 +66,19 @@
 // console.log(mirror([0, 2, 4, 6]));
 // console.log(mirror([1, 2, 3, 4, 5]));
 // console.log(mirror([3, 5, 6, 7, 8]));
+
+// ==============================================================================
+// #5
+// Create a function that takes a number and returns an array with the digits of the number in reverse order.
+
+// function reverseArr(num) {
+//    let numToString = num.toString();
+//    let strToArr = numToString.split("");
+//    let arrToReverse = strToArr.reverse();
+//    let arrToNum = arrToReverse.map((item) => +item);
+
+//    return arrToNum;
+// }
+
+// console.log(reverseArr(1485979));
+// console.log(reverseArr(623478));
