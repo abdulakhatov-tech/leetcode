@@ -276,3 +276,18 @@
 
 // console.log(toNumberArray(["9.4", "4.2"]));
 // console.log(toNumberArray(["9.5", "8.8"]));
+
+// ==============================================================================
+// #15
+
+// function count(n) {
+//    let result = [];
+
+//    for (let i = 1; i <= n; i++) {
+//       result.push(i);
+//    }
+
+//    return result;
+// }
+
+// console.log(count(10));
