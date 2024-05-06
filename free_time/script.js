@@ -361,3 +361,27 @@
 
 // console.log(sortDescending(123));
 // console.log(sortDescending(1254859723));
+
+// ==============================================================================
+// #19
+
+// Transform into an Array with No Duplicates
+// A set is a collection of unique items. A set can be formed from an array by removing all duplicate items.
+
+// function set(arr) {
+//    let result = [];
+//    return arr
+//       .filter((item) => {
+//          if (result.includes(item)) {
+//             return false;
+//          }
+//          result.push(item);
+
+//          return true;
+//       })
+//       .sort((x, y) => x - y);
+// }
+
+// console.log(set([1, 3, 3, 5, 5]));
+// console.log(set([5, 7, 8, 9, 10, 15]));
+// console.log(set([3, 3, 3, 2, 1]));
