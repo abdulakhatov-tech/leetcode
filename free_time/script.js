@@ -181,24 +181,18 @@
 // Create a function that returns only strings with unique characters.
 
 // function filterUnique(arr) {
-//    let result = [];
+//    return arr.filter((item) => {
+//       let result = [];
 
-//    for (let i = 0; i < arr.length; i++) {
-//       let a = [];
-
-//       for (let k = 0; k < arr[i].length; k++) {
-//          if (!a.includes(arr[i][k])) {
-//             a.push(arr[i][k]);
-//          } else {
-//             a = [];
-
+//       for (let i of item) {
+//          if (result.includes(i)) {
+//             return false;
 //          }
+//          result.push(i);
 //       }
 
-//       result.push(a);
-//    }
-
-//    return result;
+//       return true;
+//    });
 // }
 
 // console.log(filterUnique(["abb", "abc", "abcdb", "aea", "bbb"]));
