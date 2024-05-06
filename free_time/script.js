@@ -385,3 +385,23 @@
 // console.log(set([1, 3, 3, 5, 5]));
 // console.log(set([5, 7, 8, 9, 10, 15]));
 // console.log(set([3, 3, 3, 2, 1]));
+
+// ==============================================================================
+// #20
+
+// Say "Hello" Say "Bye"
+// Write a function that takes a string name and a number num (either 0 or 1) and
+// return "Hello" + name if num is 1, otherwise return "Bye" + name.
+
+// function sayHelloBye(name, num) {
+//    if (num === 1) {
+//       return `Hello, ${name.slice(0, 1).toUpperCase() + name.slice(1)}`;
+//    } else if (num === 0) {
+//       return `Bye, ${name.slice(0, 1).toUpperCase() + name.slice(1)}`;
+//    } else {
+//       return "Num must be 0 or 1!";
+//    }
+// }
+
+// console.log(sayHelloBye("alon", 1));
+// console.log(sayHelloBye("Tomi", 0));
