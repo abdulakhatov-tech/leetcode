@@ -340,3 +340,24 @@
 // }
 
 // console.log(str_count("Hello", "o"));
+
+// ==============================================================================
+// #18
+
+// Sort Numbers in Descending Order
+// Create a function that takes any non-negative number as an argument and return it with its
+//  digits in descending order. Descending order is when you sort from highest to lowest.
+
+// function sortDescending(num) {
+//    let numToString = num.toString();
+//    let result = "";
+
+//    for (let i = numToString.length - 1; i >= 0; i--) {
+//       result += numToString[i];
+//    }
+
+//    return +result;
+// }
+
+// console.log(sortDescending(123));
+// console.log(sortDescending(1254859723));
