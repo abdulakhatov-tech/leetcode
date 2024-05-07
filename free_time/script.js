@@ -645,20 +645,39 @@
 // ==============================================================================
 // #33
 
-function isPrimeNumber(n) {
-   if (n < 0) return "n must be positive!";
+// function isPrimeNumber(n) {
+//    if (n < 0) return "n must be positive!";
 
-   if (n === 0 || n === 1) return false;
+//    if (n === 0 || n === 1) return false;
 
-   for (let i = 2; i < n; i++) {
-      if (n % i === 0) return false;
-   }
+//    for (let i = 2; i < n; i++) {
+//       if (n % i === 0) return false;
+//    }
 
-   return true;
-}
+//    return true;
+// }
 
-console.log(isPrimeNumber(0));
-console.log(isPrimeNumber(1));
-console.log(isPrimeNumber(2));
-console.log(isPrimeNumber(11));
-console.log(isPrimeNumber(12));
+// console.log(isPrimeNumber(0));
+// console.log(isPrimeNumber(1));
+// console.log(isPrimeNumber(2));
+// console.log(isPrimeNumber(11));
+// console.log(isPrimeNumber(12));
+
+// ==============================================================================
+// #34
+
+// function countOfPositiveAndSumOfNegative(list) {
+//    const positiveNumbers = list.filter((item) => item > 0).length;
+//    const negativeNumbers = list
+//       .filter((item) => item < 0)
+//       .reduce((acc, item) => acc + item, 0);
+//    const result = [positiveNumbers, negativeNumbers];
+
+//    return result;
+// }
+
+// console.log(
+//    countOfPositiveAndSumOfNegative([
+//       1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15,
+//    ])
+// );
