@@ -494,3 +494,19 @@
 // }
 
 // console.log(removeFirstAndLastCharacter("sunshine"));
+
+// ==============================================================================
+// #26
+
+// function occurrences(word, character) {
+//    let count = 0;
+//    for (let item of word) {
+//       if (item === character) {
+//          count++;
+//       }
+//    }
+
+//    return count;
+// }
+
+// console.log(occurrences("sunshine", "s"));
