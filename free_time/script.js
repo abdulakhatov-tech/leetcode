@@ -561,3 +561,15 @@
 // }
 
 // console.log(getCharacterFromASCIIValue(65));
+
+// ==============================================================================
+// #28
+
+// function addLength(str) {
+//    const result = str.split(" ").map((item) => item + " " + item.length);
+
+//    return result;
+// }
+
+// console.log(addLength("apple ban"));
+// console.log(addLength("you will win"));
