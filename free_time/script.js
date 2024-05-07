@@ -473,3 +473,12 @@
 // console.log(flickSwitch(["codewars", "flick", "code", "wars"]));
 // console.log(flickSwitch(["flick", "chocolate", "adventure", "sunshine"]));
 // console.log(flickSwitch(["bicycle", "jarmony", "flick", "sheep", "flick"]));
+
+// function calculatePriceExcludingVAT(price) {
+//    let VAT = 15;
+//    let originalPrice = (price / (100 + VAT) / 100) * 100 * 100;
+
+//    return originalPrice;
+// }
+
+// console.log(calculatePriceExcludingVAT(230));
