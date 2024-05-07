@@ -641,3 +641,24 @@
 // }
 
 // console.log(clock(0, 1, 1));
+
+// ==============================================================================
+// #33
+
+function isPrimeNumber(n) {
+   if (n < 0) return "n must be positive!";
+
+   if (n === 0 || n === 1) return false;
+
+   for (let i = 2; i < n; i++) {
+      if (n % i === 0) return false;
+   }
+
+   return true;
+}
+
+console.log(isPrimeNumber(0));
+console.log(isPrimeNumber(1));
+console.log(isPrimeNumber(2));
+console.log(isPrimeNumber(11));
+console.log(isPrimeNumber(12));
