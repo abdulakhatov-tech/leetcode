@@ -550,3 +550,14 @@
 // }
 
 // console.log(findThePosition("c"));
+
+// ==============================================================================
+// #27
+
+// function getCharacterFromASCIIValue(num) {
+//    const result = String.fromCharCode(num);
+
+//    return result;
+// }
+
+// console.log(getCharacterFromASCIIValue(65));
