@@ -453,3 +453,23 @@
 // }
 
 // console.log(differenceOfVolumesOfCuboids([2, 2, 3], [5, 4, 1]));
+
+// ==============================================================================
+// #23
+// function flickSwitch(arr) {
+//    let result = [];
+
+//    let option = true;
+//    for (let item of arr) {
+//       if (item === "flick") {
+//          option = !option;
+//       }
+//       result.push(option);
+//    }
+
+//    return result;
+// }
+
+// console.log(flickSwitch(["codewars", "flick", "code", "wars"]));
+// console.log(flickSwitch(["flick", "chocolate", "adventure", "sunshine"]));
+// console.log(flickSwitch(["bicycle", "jarmony", "flick", "sheep", "flick"]));
