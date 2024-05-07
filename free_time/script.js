@@ -608,3 +608,14 @@
 // }
 
 // console.log(pigIt("Pig latin is cool"));
+
+// ==============================================================================
+// #30
+
+// function calculateAverage(list) {
+//    const result = list.reduce((acc, item) => acc + item, 0) / list.length;
+
+//    return result;
+// }
+
+// console.log(calculateAverage([1, 2, 3, 4, 5]));
