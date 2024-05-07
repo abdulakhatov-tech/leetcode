@@ -619,3 +619,14 @@
 // }
 
 // console.log(calculateAverage([1, 2, 3, 4, 5]));
+
+// ==============================================================================
+// #31
+
+// function grasshopper(LaLiga, CopaDelRey, Champions) {
+//    const result = LaLiga + CopaDelRey + Champions;
+
+//    return result;
+// }
+
+// console.log(grasshopper(5, 10, 2));
