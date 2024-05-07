@@ -438,3 +438,18 @@
 // console.log(remove("Hi!"));
 // console.log(remove("Hi!!!"));
 // console.log(remove("!Hi!"));
+
+// ==============================================================================
+// #23
+
+// function differenceOfVolumesOfCuboids(arr1, arr2) {
+//    let sum1 = 0;
+//    let sum2 = 0;
+
+//    sum1 = arr1.reduce((acc, item) => acc * item, 1);
+//    sum2 = arr2.reduce((acc, item) => acc * item, 1);
+
+//    return Math.abs(sum1 - sum2);
+// }
+
+// console.log(differenceOfVolumesOfCuboids([2, 2, 3], [5, 4, 1]));
