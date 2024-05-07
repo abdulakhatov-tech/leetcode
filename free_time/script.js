@@ -598,3 +598,13 @@
 // console.log(hashtagGenerator(" Hello there thanks for trying my Kata"));
 // console.log(hashtagGenerator("    Hello     World   "));
 // console.log(hashtagGenerator(""));
+
+// ==============================================================================
+// // #29
+// function pigIt(str) {
+//    let result = str.split(" ").map((item) => item.slice(1) + item[0] + "ay");
+
+//    return result;
+// }
+
+// console.log(pigIt("Pig latin is cool"));
