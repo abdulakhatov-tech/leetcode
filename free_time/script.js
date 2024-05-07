@@ -573,3 +573,28 @@
 
 // console.log(addLength("apple ban"));
 // console.log(addLength("you will win"));
+
+// ==============================================================================
+// #29
+
+// function hashtagGenerator(str) {
+//    let word = "";
+//    let result = "#";
+
+//    if (str.length === 0) return false;
+
+//    for (let item of str) {
+//       if (item === " ") {
+//          continue;
+//       } else {
+//          word += item;
+//       }
+//    }
+//    result += word[0].toUpperCase() + word.slice(1);
+
+//    return result;
+// }
+
+// console.log(hashtagGenerator(" Hello there thanks for trying my Kata"));
+// console.log(hashtagGenerator("    Hello     World   "));
+// console.log(hashtagGenerator(""));
