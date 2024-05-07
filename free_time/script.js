@@ -405,3 +405,36 @@
 
 // console.log(sayHelloBye("alon", 1));
 // console.log(sayHelloBye("Tomi", 0));
+
+// ==============================================================================
+// #21
+
+// Is the Number Symmetrical?
+// Create a function that takes a number as an argument and returns true or false
+// depending on whether the number is symmetrical or not. A number is symmetrical
+// when it is the same as its reverse.
+
+// function isSymmetrical(num) {
+//    console.log("Object");
+// }
+
+// console.log(isSymmetrical(7227));
+// console.log(isSymmetrical(12567));
+// console.log(isSymmetrical(44444444));
+// console.log(isSymmetrical(9939));
+// console.log(isSymmetrical(1112111));
+
+// ==============================================================================
+// #22
+
+// function remove(str) {
+//    if (str[str.length - 1] === "!") {
+//       return str.slice(0, str.length - 1);
+//    }
+
+//    return str;
+// }
+
+// console.log(remove("Hi!"));
+// console.log(remove("Hi!!!"));
+// console.log(remove("!Hi!"));
