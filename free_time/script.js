@@ -474,6 +474,8 @@
 // console.log(flickSwitch(["flick", "chocolate", "adventure", "sunshine"]));
 // console.log(flickSwitch(["bicycle", "jarmony", "flick", "sheep", "flick"]));
 
+// ==============================================================================
+// #24
 // function calculatePriceExcludingVAT(price) {
 //    let VAT = 15;
 //    let originalPrice = (price / (100 + VAT) / 100) * 100 * 100;
@@ -482,3 +484,13 @@
 // }
 
 // console.log(calculatePriceExcludingVAT(230));
+
+// ==============================================================================
+// #25
+// function removeFirstAndLastCharacter(character) {
+//    let result = character.slice(1, character.length - 1);
+
+//    return result;
+// }
+
+// console.log(removeFirstAndLastCharacter("sunshine"));
