@@ -714,3 +714,17 @@
 // }
 
 // console.log(sumStringsAsNumbers("1", "4"));
+
+// ==============================================================================
+// #38
+
+// function abbreviateATwoWordName(word) {
+//    const result = word
+//       .split(" ")
+//       .map((item) => item[0])
+//       .join(".");
+
+//    return result;
+// }
+
+// console.log(abbreviateATwoWordName("Sam Harris"));
