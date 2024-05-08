@@ -692,3 +692,14 @@
 // }
 
 // console.log(shortestWord("We are shortening the word"));
+
+// ==============================================================================
+// #36
+
+// function reverseNumber(number) {
+//    const result = number.toString().split("").reverse().join("");
+
+//    return +result;
+// }
+
+// console.log(reverseNumber(1234));
