@@ -703,3 +703,14 @@
 // }
 
 // console.log(reverseNumber(1234));
+
+// ==============================================================================
+// #37
+
+// function sumStringsAsNumbers(strNum1, strNum2) {
+//    const result = eval(strNum1 + strNum2).toString();
+
+//    return result;
+// }
+
+// console.log(sumStringsAsNumbers("1", "4"));
