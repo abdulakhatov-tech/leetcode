@@ -63,22 +63,39 @@
 
 // 17. Yulduzli x
 
+// const fn = (n) => {
+//   let result = "";
+
+//   for(let i = 1; i <= n; i++) {
+//     for(let k = 1; k <= n; k++) {
+//       if(i === k || k === n - (i - 1)) {
+//         result += '*'
+//       }
+//       else {
+//         result += ' '
+//       }
+//     }
+//     result += "\n";
+//   }
+
+//   return result
+// }
+
+// console.log(fn(15));
+
+// 18. Teskari parallelogram
 const fn = (n) => {
   let result = "";
 
-  for(let i = 1; i <= n; i++) {
-    for(let k = 1; k <= n; k++) {
-      if(i === k || k === n - (i - 1)) {
-        result += '*'
-      } 
-      else {
-        result += ' '
-      }
+  for (let i = 1; i <= n; i++) {
+    result += " ".repeat(n - i);
+    for (let k = 1; k <= n; k++) {
+      result +='*'
     }
     result += "\n";
   }
 
-  return result
-}
+  return result;
+};
 
 console.log(fn(15));
