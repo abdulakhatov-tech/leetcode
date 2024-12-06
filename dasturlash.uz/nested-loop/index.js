@@ -84,18 +84,45 @@
 // console.log(fn(15));
 
 // 18. Teskari parallelogram
-const fn = (n) => {
-  let result = "";
+// const fn = (n) => {
+//   let result = "";
 
-  for (let i = 1; i <= n; i++) {
-    result += " ".repeat(n - i);
-    for (let k = 1; k <= n; k++) {
-      result +='*'
-    }
-    result += "\n";
-  }
+//   for (let i = 1; i <= n; i++) {
+//     result += " ".repeat(n - i);
+//     for (let k = 1; k <= n; k++) {
+//       result +='*'
+//     }
+//     result += "\n";
+//   }
 
-  return result;
-};
+//   return result;
+// };
 
-console.log(fn(15));
+// console.log(fn(15));
+
+// 19. G'alati parallelogram
+// const fn = (n) => {
+//   let result = "";
+
+//   for (let i = 1; i <= n; i++) {
+//     result += " ".repeat(n - i);
+//     for (let k = 1; k <= n; k++) {
+//         if(i===1 || i===n) {
+//           result +='*'
+//         } else {
+//           if(k===1 || k === n) {
+//             result += '*'
+//           } else {
+//             result += ' '
+//           }
+//         }
+
+//     }
+//     result += "\n";
+//   }
+
+//   return result;
+// };
+
+// console.log(fn(15));
+
