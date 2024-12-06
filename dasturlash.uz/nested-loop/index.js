@@ -128,23 +128,45 @@
 
 // 20. Uchburchak
 
+// const fn = (n) => {
+//   let result = '';
+
+//   for(let i = 1; i <= n; i++) {
+//     let line = '';
+
+//     for(let j = 0; j < n - i; j++) {
+//       line += ' '
+//     }
+
+//     for(let j = 0; j < i; j++) {
+//       line += '* '
+//     }
+//     result += line + '\n'
+//   }
+
+//   return result
+// }
+
+// console.log(fn(5));
+
+// 21. Teskari uchburchak
+
 const fn = (n) => {
-  let result = '';
+  let result = "";
 
-  for(let i = 1; i <= n; i++) {
-    let line = '';
-
-    for(let j = 0; j < n - i; j++) {
-      line += ' '
+  for (let i = n; i > 0; i--) {
+    for (let j = 0; j < n - i; j++) {
+      result += " ";
     }
 
-    for(let j = 0; j < i; j++) {
-      line += '* '
+    for (let k = i; k > 0; k--) {
+      result += "* ";
     }
-    result += line + '\n'
+
+    result += "\n";
   }
 
-  return result
-}
+  return result;
+};
 
-console.log(fn(5))
+console.log(fn(5));
