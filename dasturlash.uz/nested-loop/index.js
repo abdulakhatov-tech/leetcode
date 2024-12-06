@@ -3,7 +3,7 @@ const fn = (n) => {
 
   for (let i = 0; i <= n; i++) {
     for (let k = 1; k <= i; k++) {
-      result += k;
+      result += i;
     }
     result += "\n";
   }
