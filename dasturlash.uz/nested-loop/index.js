@@ -1,25 +1,14 @@
-const fn = (s) => {
-    const options = {
-      I: 1,
-      V: 5,
-      X: 10,
-      L: 50,
-      C: 100,
-      D: 500,
-      M: 1000
-    }
-  
-    let result = 0;
-  
-    for(let i = 0; i < s.length; i++) {
-      if(i > 0 && options[s[i]] > options[s[i - 1]]) {
-        result += options[s[i]] - 2 * options[s[i - 1]]
-      } else {
-        result += options[s[i]]
-      }
-    }
+const fn = (n) => {
+  let result = "";
 
-    return result
+  for (let i = n; i > 0; i--) {
+    for (let k = i; k > 0; k--) {
+      result += "*";
+    }
+    result += "\n";
   }
-  
-  console.log(fn('X'));
+
+  return result;
+};
+
+console.log(fn(5));
