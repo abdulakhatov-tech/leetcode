@@ -1,9 +1,9 @@
 const fn = (n) => {
   let result = "";
 
-  for (let i = n; i > 0; i--) {
-    for (let k = i; k > 0; k--) {
-      result += "*";
+  for (let i = 0; i <= n; i++) {
+    for (let k = 1; k <= i; k++) {
+      result += k;
     }
     result += "\n";
   }
