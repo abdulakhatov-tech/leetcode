@@ -303,3 +303,28 @@
 // };
 
 // console.log(fn(5));
+
+// 27. Yoyma uchburchak
+
+const fn = (rows) => {
+  let result = "";
+
+  for (let i = 0; i < 2 * rows; i++) {
+    let spaces = "";
+    let stars = "";
+
+    for (let k = 0; k < i + 1; k++) {
+      if (k < rows) {
+        stars += `*`;
+      } else {
+        stars = stars.slice(0, 2 * rows - i - 1);
+      }
+    }
+
+    result += stars + spaces + "\n";
+  }
+
+  return result;
+};
+
+console.log(fn(5));
