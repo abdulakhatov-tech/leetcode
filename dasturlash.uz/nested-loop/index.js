@@ -151,22 +151,48 @@
 
 // 21. Teskari uchburchak
 
+// const fn = (n) => {
+//   let result = "";
+
+//   for (let i = n; i > 0; i--) {
+//     for (let j = 0; j < n - i; j++) {
+//       result += " ";
+//     }
+
+//     for (let k = i; k > 0; k--) {
+//       result += "* ";
+//     }
+
+//     result += "\n";
+//   }
+
+//   return result;
+// };
+
+// console.log(fn(5));
+
+// 22. Uchburchak karkazi
+
 const fn = (n) => {
-  let result = "";
+    let result = ''
 
-  for (let i = n; i > 0; i--) {
-    for (let j = 0; j < n - i; j++) {
-      result += " ";
+    for(let i = n; i >= 1; i--) {
+        for(let k = 1; k <= n - i; k++) {
+            result += ' '
+        }
+
+        for(let j = i; j >= 1; j--) {
+            if(i === 1 || i === n || j === i || j === 1) {
+                result += `*`
+            } else {
+                result += ' '
+            }
+        }
+        result += '\n'
     }
 
-    for (let k = i; k > 0; k--) {
-      result += "* ";
-    }
 
-    result += "\n";
-  }
-
-  return result;
-};
+    return result
+}
 
 console.log(fn(5));
