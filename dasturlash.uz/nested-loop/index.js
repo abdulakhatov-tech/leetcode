@@ -173,26 +173,51 @@
 
 // 22. Uchburchak karkazi
 
-const fn = (n) => {
+// const fn = (n) => {
+//     let result = ''
+
+//     for(let i = n; i >= 1; i--) {
+//         for(let k = 1; k <= n - i; k++) {
+//             result += ' '
+//         }
+
+//         for(let j = i; j >= 1; j--) {
+//             if(i === 1 || i === n || j === i || j === 1) {
+//                 result += `*`
+//             } else {
+//                 result += ' '
+//             }
+//         }
+//         result += '\n'
+//     }
+
+
+//     return result
+// }
+
+// console.log(fn(5));
+
+// Archa jon archa
+
+const fn = (rows) => {
     let result = ''
 
-    for(let i = n; i >= 1; i--) {
-        for(let k = 1; k <= n - i; k++) {
-            result += ' '
+    for(let i = 0; i < rows; i++) {
+        let spaces = '';
+        let stars = '';
+
+        for(let j = 0; j < rows - i - 1; j++) {
+            spaces += ' '
         }
 
-        for(let j = i; j >= 1; j--) {
-            if(i === 1 || i === n || j === i || j === 1) {
-                result += `*`
-            } else {
-                result += ' '
-            }
+        for(let k = 0; k < 2 * i + 1; k++) {
+            stars += '*'
         }
-        result += '\n'
+
+        result += spaces + stars + '\n'
     }
-
 
     return result
 }
 
-console.log(fn(5));
+console.log(fn(5))
