@@ -248,29 +248,58 @@
 
 // 25. Archa karkazi
 
-const fn = (rows) => {
-  let result = "";
+// const fn = (rows) => {
+//   let result = "";
 
-  for (let i = 0; i < rows; i++) {
-    let spaces = "";
-    let stars = "";
+//   for (let i = 0; i < rows; i++) {
+//     let spaces = "";
+//     let stars = "";
 
-    for (let k = 0; k < rows - i - 1; k++) {
-      spaces += " ";
-    }
+//     for (let k = 0; k < rows - i - 1; k++) {
+//       spaces += " ";
+//     }
 
-    for (let j = 0; j < 2 * i + 1; j++) {
-      if (i === 0 || i === rows - 1 || j === 0 || j === 2 * i) {
-        stars += `*`;
-      } else {
-        stars += " ";
-      }
-    }
+//     for (let j = 0; j < 2 * i + 1; j++) {
+//       if (i === 0 || i === rows - 1 || j === 0 || j === 2 * i) {
+//         stars += `*`;
+//       } else {
+//         stars += " ";
+//       }
+//     }
 
-    result += spaces + stars + "\n";
-  }
+//     result += spaces + stars + "\n";
+//   }
 
-  return result;
-};
+//   return result;
+// };
 
-console.log(fn(5));
+// console.log(fn(5));
+
+// 26. Teskari archa karkazi
+
+// const fn = (rows) => {
+//   let result = "";
+
+//   for (let i = rows; i > 0; i--) {
+//     let spaces = "";
+//     let stars = "";
+
+//     for (let k = rows - i; k > 0; k--) {
+//       spaces += " ";
+//     }
+
+//     for (let j = 2 * i - 1; j > 0; j--) {
+//       if (i === 1 || i === rows || j === 1 || j === 2 * i - 1) {
+//         stars += `*`;
+//       } else {
+//         stars += " ";
+//       }
+//     }
+
+//     result += spaces + stars + "\n";
+//   }
+
+//   return result;
+// };
+
+// console.log(fn(5));
