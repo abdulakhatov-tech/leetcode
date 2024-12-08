@@ -197,27 +197,52 @@
 
 // console.log(fn(5));
 
-// Archa jon archa
+// 23. Archa jon archa
 
-const fn = (rows) => {
-    let result = ''
+// const fn = (rows) => {
+//     let result = ''
 
-    for(let i = 0; i < rows; i++) {
-        let spaces = '';
-        let stars = '';
+//     for(let i = 0; i < rows; i++) {
+//         let spaces = '';
+//         let stars = '';
 
-        for(let j = 0; j < rows - i - 1; j++) {
-            spaces += ' '
-        }
+//         for(let j = 0; j < rows - i - 1; j++) {
+//             spaces += ' '
+//         }
 
-        for(let k = 0; k < 2 * i + 1; k++) {
-            stars += '*'
-        }
+//         for(let k = 0; k < 2 * i + 1; k++) {
+//             stars += '*'
+//         }
 
-        result += spaces + stars + '\n'
-    }
+//         result += spaces + stars + '\n'
+//     }
 
-    return result
-}
+//     return result
+// }
 
-console.log(fn(5))
+// console.log(fn(5))
+
+// 23. qulagan archa
+
+// const fn = (rows) => {
+//     let result = ''
+
+//     for(let i = rows; i > 0; i--) {
+//         let spaces = '';
+//         let stars = '';
+
+//         for(let k = 0; k < rows - i; k++) {
+//             spaces += '-'
+//         }
+
+//         for(let j = 2 * i - 1; j > 0; j--) {
+//             stars += '*'
+//         }
+
+//         result += spaces + stars + '\n'
+//     }
+
+//     return result
+// }
+
+// console.log(fn(5))
