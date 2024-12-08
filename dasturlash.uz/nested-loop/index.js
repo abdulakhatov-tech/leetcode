@@ -191,7 +191,6 @@
 //         result += '\n'
 //     }
 
-
 //     return result
 // }
 
@@ -222,7 +221,7 @@
 
 // console.log(fn(5))
 
-// 23. qulagan archa
+// 24. qulagan archa
 
 // const fn = (rows) => {
 //     let result = ''
@@ -246,3 +245,32 @@
 // }
 
 // console.log(fn(5))
+
+// 25. Archa karkazi
+
+const fn = (rows) => {
+  let result = "";
+
+  for (let i = 0; i < rows; i++) {
+    let spaces = "";
+    let stars = "";
+
+    for (let k = 0; k < rows - i - 1; k++) {
+      spaces += " ";
+    }
+
+    for (let j = 0; j < 2 * i + 1; j++) {
+      if (i === 0 || i === rows - 1 || j === 0 || j === 2 * i) {
+        stars += `*`;
+      } else {
+        stars += " ";
+      }
+    }
+
+    result += spaces + stars + "\n";
+  }
+
+  return result;
+};
+
+console.log(fn(5));
