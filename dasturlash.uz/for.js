@@ -292,3 +292,16 @@ const fn19 = (n) => {
 // console.log(fn19(127));
 
 // ====================================( 20 )====================================
+const fn20 = (n) => {
+    let result = '';
+
+    for(let i = n; i > 0; i = Math.floor(i/10)) {
+        const digit = i % 10;
+        result += digit;
+    }
+
+    return +result
+}
+
+// console.log(fn20(12345));
+// console.log(fn20(6821));
