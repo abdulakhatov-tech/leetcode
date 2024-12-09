@@ -245,9 +245,22 @@ const fn16 = (n) => {
   return sum === original;
 };
 
-console.log(fn16(153));
-console.log(fn16(256));
+// console.log(fn16(153));
+// console.log(fn16(256));
 
 // ====================================( 17 )====================================
+const fn17 = (n) => {
+    for(let i = 1; i <= n; i++) {
+        if(i !== 1 && i !== n && n % i === 0) {
+            return false
+        } 
+    }
+
+    return true
+}
+
+// console.log(fn17(7));
+// console.log(fn17(25));
+// console.log(fn17(101));
 
 // ====================================( 18 )====================================
