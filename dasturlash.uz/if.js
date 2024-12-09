@@ -148,5 +148,27 @@ const fn12 = (c) => {
 // console.log(fn12('B'));
 
 // ====================================( 13 )====================================
+const fn13 = (n) => {
+    const weekDays = {
+        0: "Yakshanba",
+        1: "Dushanba",
+        2: "Seshanba",
+        3: "Chorshanba",
+        4: "Payshanba",
+        5: "Juma",
+        6: "Shanba"
+    }
+
+    if(n >= 0 && n <= 6) {
+        return weekDays[n]
+    } 
+
+    return  "Bunday hafta kuni yo'q."
+}
+
+// console.log(fn13(1))
+// console.log(fn13(6))
+// console.log(fn13(0))
+
 // ====================================( 14 )====================================
 // ====================================( 15 )====================================
