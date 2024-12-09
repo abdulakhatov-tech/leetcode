@@ -214,12 +214,12 @@ const fn17 = (a, b, c) => {
 
   if (a > 0) {
     count++;
-  } 
-  
+  }
+
   if (b > 0) {
     count++;
-  } 
-  
+  }
+
   if (c > 0) {
     count++;
   }
@@ -232,14 +232,14 @@ const fn17 = (a, b, c) => {
 
 // ====================================( 18 )====================================
 const fn18 = (a, b) => {
-    if (a > b) {
-        return b
-    } else if(a < b) {
-        return a
-    } else {
-        return 'teng'
-    }
-}
+  if (a > b) {
+    return b;
+  } else if (a < b) {
+    return a;
+  } else {
+    return "teng";
+  }
+};
 
 // console.log(fn18(1, 8));
 // console.log(fn18(10, -9));
@@ -252,18 +252,19 @@ const fn19 = (a, b, c) => (a + b + c) / 3;
 
 // ====================================( 20 )====================================
 const fn20 = (a, b, c) => {
-    if(a > b & b > c) {
-        return 1;
-    } else if(a < b & b < c) {
-        return 2
-    } if(b > a & b > c) {
-        return b
-    } else if(a === b && b === c) {
-        return 5
-    } else {
-        return 0
-    }
-}
+  if ((a > b) & (b > c)) {
+    return 1;
+  } else if ((a < b) & (b < c)) {
+    return 2;
+  }
+  if ((b > a) & (b > c)) {
+    return b;
+  } else if (a === b && b === c) {
+    return 5;
+  } else {
+    return 0;
+  }
+};
 
 // console.log(fn20(5,10,15));
 // console.log(fn20(3,10,8));
@@ -271,34 +272,59 @@ const fn20 = (a, b, c) => {
 
 // ====================================( 21 )====================================
 const fn21 = (a, b, c) => {
-    if(a === b) {
-        return c
-    } else if(b === c) {
-        return a
-    } else if(a === c) {
-        return b
-    } else {
-        return 0
-    }
-}
+  if (a === b) {
+    return c;
+  } else if (b === c) {
+    return a;
+  } else if (a === c) {
+    return b;
+  } else {
+    return 0;
+  }
+};
 
 // console.log(fn21(5,10,5));
 // console.log(fn21(3,10,8));
 
 // ====================================( 22 )====================================
 const fn22 = (a, b) => {
-    return  a - b > 0 ? a - b : (a - b) * (-1)
-}
+  return a - b > 0 ? a - b : (a - b) * -1;
+};
 
 // console.log(fn22(2,6));
 // console.log(fn22(-2,6));
 
 // ====================================( 23 )====================================
-const fn23 = (a) => a > 0 ? a : a * (-1);
+const fn23 = (a) => (a > 0 ? a : a * -1);
 
 // console.log(fn23(20));
 // console.log(fn23(-15));
 
 // ====================================( 24 )====================================
+// const fn24 = (a) => {
+//   if (a > 0 && a < 10) {
+//     return 1;
+//   } else if (a >= 0 && a < 100) {
+//     return 2;
+//   } else if (a >= 100 && a < 1000) {
+//     return 3;
+//   }
+// };
+
+const fn24 = (n) => {
+  let count = 0;
+
+  while (n > 0) {
+    n = parseInt(n/10)    
+    count++
+  }
+
+  return count;
+};
+
+// console.log(fn24(20));
+// console.log(fn24(324));
+// console.log(fn24(2324));
+
 // ====================================( 25 )====================================
 // ====================================( 26 )====================================
