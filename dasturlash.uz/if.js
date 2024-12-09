@@ -362,46 +362,57 @@ const fn26 = (a, b, c) => {
 // console.log(fn26(18, 7, 16));
 
 // ====================================( 27 )====================================
-const fn27 = (a,b,c) => {
-    let count = 0;
+const fn27 = (a, b, c) => {
+  let count = 0;
 
-    if(a%2 ===0) {
-        count++
-    }
+  if (a % 2 === 0) {
+    count++;
+  }
 
-    if(b%2 ===0) {
-        count++
-    }
+  if (b % 2 === 0) {
+    count++;
+  }
 
-    if(c%2 ===0) {
-        count++
-    }
+  if (c % 2 === 0) {
+    count++;
+  }
 
-    return count === 2 ? 1 : count === 1 ? 2 : 0
-}
+  return count === 2 ? 1 : count === 1 ? 2 : 0;
+};
 
 // console.log(fn27(8,2,9));
 // console.log(fn27(16,21,17));
 
 // ====================================( 28 )====================================
-const fn28 = (a,b,c) => {
-    let count = 0;
+const fn28 = (a, b, c) => {
+  let count = 0;
 
-    if(a%2 ===0) {
-        count++
-    }
+  if (a % 2 === 0) {
+    count++;
+  }
 
-    if(b%2 ===0) {
-        count++
-    }
+  if (b % 2 === 0) {
+    count++;
+  }
 
-    if(c%2 ===0) {
-        count++
-    }
+  if (c % 2 === 0) {
+    count++;
+  }
 
-    return count === 2 ? 1 : count === 1 ? 2 : 0
-}
+  return count === 2 ? 1 : count === 1 ? 2 : 0;
+};
 
 // console.log(fn27(8,2,9));
 // console.log(fn27(16,21,17));
+
 // ====================================( 29 )====================================
+const fn29 = (a, b, c) => {
+  if (a > 0 && b > 0 && c > 0) {
+    return +(a + "" + b + "" + c);
+  }
+
+  return 0;
+};
+
+console.log(fn29(3, 6, 2));
+console.log(fn29(8, 0, 3));
