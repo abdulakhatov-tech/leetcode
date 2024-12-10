@@ -650,7 +650,7 @@ const fn30 = (rows) => {
 const fn31 = (rows) => {
   let shape = "";
 
-  for (let i = (2 * rows) / 2 - 5; i >= 0; i -= 2) {
+  for (let i = rows - 5; i >= 0; i -= 2) {
     shape +=
       "-".repeat(i / 2) +
       "*".repeat(rows - i) +
@@ -673,3 +673,19 @@ const fn31 = (rows) => {
 
 // console.log(fn31(10));
 // console.log(fn31(16));
+
+// =================================== ( 32 ) ===================================
+const fn32 = (a, b) => {
+  let result = [];
+
+  for (let i = a; i <= b; i++) {
+    if (i === +i.toString().split("").reverse().join("")) {
+      result.push(i);
+    }
+  }
+
+  return result;
+};
+
+// console.log(fn32(12, 50));
+
