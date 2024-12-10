@@ -689,3 +689,20 @@ const fn32 = (a, b) => {
 
 // console.log(fn32(12, 50));
 
+// =================================== ( 33 ) ===================================
+const fn33 = (a, b, c) => {
+  let sum = 0;
+
+  for(let i = a; i <= b; i++) {
+    let result = 1
+    for(let k = 1; k <= c; k++) {
+      result *= i
+    }
+    
+    sum += result
+  }
+
+  return sum
+}
+
+// console.log(fn33(2, 10, 3));
