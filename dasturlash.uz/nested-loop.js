@@ -645,3 +645,31 @@ const fn30 = (rows) => {
 
 // console.log(fn30(5));
 // console.log(fn30(8));
+
+// =================================== ( 31 ) ===================================
+const fn31 = (rows) => {
+  let shape = "";
+
+  for (let i = (2 * rows) / 2 - 5; i >= 0; i -= 2) {
+    shape +=
+      "-".repeat(i / 2) +
+      "*".repeat(rows - i) +
+      "-".repeat(i) +
+      "*".repeat(rows - i) +
+      "-".repeat(i / 2) +
+      "\n";
+  }
+
+  for (let i = 2 * rows - 1; i > 0; i -= 2) {
+    shape +=
+      "-".repeat(rows - 2 - Math.floor(i / 2) + 1) +
+      "*".repeat(i) +
+      "-".repeat(rows - 2 - Math.floor(i / 2) + 1) +
+      "\n";
+  }
+
+  return shape;
+};
+
+// console.log(fn31(10));
+// console.log(fn31(16));
