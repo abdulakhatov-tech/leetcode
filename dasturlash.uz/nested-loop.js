@@ -613,3 +613,35 @@ const fn29 = (rows) => {
 // console.log(fn29(5));
 
 // =================================== ( 30 ) ===================================
+const fn30 = (rows) => {
+  let shape = "";
+
+  for (let i = 1; i < 2 * rows; i += 2) {
+    if (i === 1) {
+      shape += "*".repeat(2 * rows - 1) + "\n";
+    } else {
+      shape +=
+        "*".repeat(rows - i / 2 + 1) +
+        " ".repeat(i - 2) +
+        "*".repeat(rows - i / 2 + 1) +
+        "\n";
+    }
+  }
+
+  for (let k = 2 * rows - 1; k > 0; k -= 2) {
+    if (k === 1) {
+      shape += "*".repeat(2 * rows - 1) + "\n";
+    } else {
+      shape +=
+        "*".repeat(rows - k / 2 + 1) +
+        " ".repeat(k - 2) +
+        "*".repeat(rows - k / 2 + 1) +
+        "\n";
+    }
+  }
+
+  return shape;
+};
+
+// console.log(fn30(5));
+// console.log(fn30(8));
