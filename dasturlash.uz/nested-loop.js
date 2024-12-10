@@ -596,4 +596,20 @@ const fn28 = (rows) => {
 // console.log(fn28(5));
 
 // =================================== ( 29 ) ===================================
+const fn29 = (rows) => {
+  let shape = "";
+
+  for (let i = 1; i <= 2 * rows - 1; i += 2) {
+    shape += " ".repeat(2 * rows - i) + "* ".repeat(i) + "\n";
+  }
+
+  for (let k = 2 * rows - 3; k > 0; k -= 2) {
+    shape += " ".repeat(2 * rows - k) + "* ".repeat(k) + "\n";
+  }
+
+  return shape;
+};
+
+// console.log(fn29(5));
+
 // =================================== ( 30 ) ===================================
