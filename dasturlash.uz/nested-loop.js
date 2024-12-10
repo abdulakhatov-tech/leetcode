@@ -358,5 +358,30 @@ const fn18 = (rows) => {
 // console.log(fn18(5));
 
 // =================================== ( 19 ) ===================================
+const fn19 = (rows) => {
+    let shape = '';
+
+    for(let i = 1; i <= rows; i++) {
+
+        for(let j = 1; j <= rows - i; j++) {
+            shape += '-'
+        }
+
+        for(let k = 1; k <= rows; k++) {
+            if(i === 1 || i === rows || k === rows || k === 1) {
+                shape += '*'
+            } else {
+                shape += ' '
+            }
+        }
+
+        shape += '\n'
+    }
+
+    return shape;
+}
+
+// console.log(fn19(5));
+
 // =================================== ( 20 ) ===================================
 
