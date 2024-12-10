@@ -1,5 +1,3 @@
-const e = require("cors");
-
 // =================================== ( 1 ) ===================================
 const fn1 = (n) => {
   let sum = 0;
@@ -505,55 +503,81 @@ const fn24 = (rows) => {
 
 // =================================== ( 25 ) ===================================
 const fn25 = (rows) => {
-    let shape = '';
+  let shape = "";
 
-    for(let i = 1; i <= rows; i++) {
-        for(let k = 1; k <= rows - i; k++) {
-            shape += '-'
-        }
-
-        for(let j = 1; j <= rows; j++) {
-            if(j === 1 || i === rows || i === j) {
-                shape += `* `
-            } else {
-                shape += '  '
-            }
-        }
-
-        shape += '\n'
+  for (let i = 1; i <= rows; i++) {
+    for (let k = 1; k <= rows - i; k++) {
+      shape += "-";
     }
 
-    return shape
-}
+    for (let j = 1; j <= rows; j++) {
+      if (j === 1 || i === rows || i === j) {
+        shape += `* `;
+      } else {
+        shape += "  ";
+      }
+    }
+
+    shape += "\n";
+  }
+
+  return shape;
+};
 
 // console.log(fn25(5));
 
 // =================================== ( 26 ) ===================================
 const fn26 = (rows) => {
-    let shape = '';
+  let shape = "";
 
-    for(let i = 1; i <= rows; i++) {
-        for(let k = 1; k <= i - 1; k++) {
-            shape += ' '
-        }
-
-        for(let j = 1; j <= rows; j++) {
-            if(i === 1 || j === 1 ||rows- i + 1 ===  j) {
-                shape += `* `
-            } else {
-                shape += '  '
-            }
-        }
-
-        shape += '\n'
+  for (let i = 1; i <= rows; i++) {
+    for (let k = 1; k <= i - 1; k++) {
+      shape += " ";
     }
 
-    return shape
-}
+    for (let j = 1; j <= rows; j++) {
+      if (i === 1 || j === 1 || rows - i + 1 === j) {
+        shape += `* `;
+      } else {
+        shape += "  ";
+      }
+    }
 
-console.log(fn26(5));
+    shape += "\n";
+  }
+
+  return shape;
+};
+
+// console.log(fn26(5));
 
 // =================================== ( 27 ) ===================================
+const fn27 = (rows) => {
+  let shape = "";
+
+  for (let i = 1; i <= 2 * rows; i++) {
+    if (i <= rows) {
+      for (let k = 1; k <= rows; k++) {
+        if (k < i) {
+          shape += "*";
+        }
+      }
+    } else {
+      for (let j = rows; j > 0; j--) {
+        if (i - j <= rows) {
+          shape += "*";
+        }
+      }
+    }
+
+    shape += "\n";
+  }
+
+  return shape;
+};
+
+// console.log(fn27(5));
+
 // =================================== ( 28 ) ===================================
 // =================================== ( 29 ) ===================================
 // =================================== ( 30 ) ===================================
