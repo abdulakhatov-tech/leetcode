@@ -74,4 +74,21 @@ const fn6 = (arr, n) => {
     return arr
 }
 
-console.log(fn6([6, 25, 91, 23, 72, 9, 18, 6], 2));
+// console.log(fn6([6, 25, 91, 23, 72, 9, 18, 6], 2));
+
+// =================================== ( 5 ) ===================================
+const fn7 = (arr, n) => {
+    let newArr = []
+
+    newArr[0] = n;
+
+    for(let i = 1; i <= arr.length; i++) {
+        newArr[i] = arr[i-1]
+    }
+
+
+
+    return newArr
+}
+
+console.log(fn7([6, 25, 91, 23, 72, 9, 18, 6], 2));
