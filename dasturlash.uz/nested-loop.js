@@ -706,3 +706,18 @@ const fn33 = (a, b, c) => {
 }
 
 // console.log(fn33(2, 10, 3));
+
+// =================================== ( 33 ) ===================================
+const fn34 = (x, n) => {
+  let result = '';
+
+  let count = 1
+  for(let i = 1; i <= 2*n; i+=2) {
+    result += `${x}**${i}${i !== 2*n-1 ? count % 2== 0 ? '+' : '-' : ''}`
+    count++
+  }
+
+  return eval(result)
+}
+
+console.log(fn34(5, 4));
