@@ -720,4 +720,17 @@ const fn34 = (x, n) => {
   return eval(result)
 }
 
-console.log(fn34(5, 4));
+// console.log(fn34(5, 4));
+
+// =================================== ( 34 ) ===================================
+const fn35 = (x, n) => {
+  let sum = 0;
+
+  for(let i = 0; i <= n; i++) {
+    sum+= x ** i
+  }
+
+  return sum;
+}
+
+// console.log(fn35(2, 7));
