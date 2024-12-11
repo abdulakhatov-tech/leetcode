@@ -29,3 +29,14 @@ const fn2 = (arr) => {
 // console.log(fn2([12, 21, 36, 71, 24, 85, 12, 30, 3, 25]));
 
 // =================================== ( 3 ) ===================================
+const fn3 = (arr) => {
+    let average = 0;
+
+    for(let i of arr) {
+        average += i
+    }
+
+    return parseInf(average / arr.length);
+}
+
+// console.log(fn3([6, 25, 91, 23, 72, 9, 18, 6]));
