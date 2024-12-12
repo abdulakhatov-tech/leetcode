@@ -157,3 +157,14 @@ const fn11 = (arr, n) => {
 // console.log(fn11([1, 2, 3, 2, 4], 2));
 
 // =================================== ( 12 ) ===================================
+const fn12 = (arr) => {
+  for (let i = 0; i < arr.length; i++) {
+    for (let k = i + 1; k < arr.length; k++) {
+      if (arr[i] === arr[k]) {
+        console.log(`arr[${i}]: ${arr[i]} = arr[${k}] : ${arr[k]}`);
+      }
+    }
+  }
+};
+
+// fn12([1, 2, 1, 4])
