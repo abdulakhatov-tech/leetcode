@@ -171,13 +171,30 @@ const fn12 = (arr) => {
 
 // =================================== ( 13 ) ===================================
 const fn13 = (arr1, arr2) => {
-    for(let i = 0; i < arr1.length; i++) {
-        for(let k = 0; k < arr2.length; k++) {
-            if(arr1[i] === arr2[k]) {
-                console.log(`arr1[${i}]: ${arr1[i]} = arr2[${k}]`)
-            }
-        }
+  for (let i = 0; i < arr1.length; i++) {
+    for (let k = 0; k < arr2.length; k++) {
+      if (arr1[i] === arr2[k]) {
+        console.log(`arr1[${i}]: ${arr1[i]} = arr2[${k}]`);
+      }
     }
-}
+  }
+};
 
 // fn13([1,2,3], [1,4,1,2])
+
+// =================================== ( 14 ) ===================================
+const fn14 = (arr) => {
+  let newArr = [];
+
+  for (let i = 0; i < arr.length; i++) {
+    if(!newArr.includes(arr[i])) {
+        newArr.push(arr[i])
+    }
+  }
+
+  return newArr;
+};
+
+// console.log(fn14([1, 3, 4, 1, 5, 3]));
+
+
