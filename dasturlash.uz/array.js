@@ -187,8 +187,8 @@ const fn14 = (arr) => {
   let newArr = [];
 
   for (let i = 0; i < arr.length; i++) {
-    if(!newArr.includes(arr[i])) {
-        newArr.push(arr[i])
+    if (!newArr.includes(arr[i])) {
+      newArr.push(arr[i]);
     }
   }
 
@@ -197,4 +197,19 @@ const fn14 = (arr) => {
 
 // console.log(fn14([1, 3, 4, 1, 5, 3]));
 
+// =================================== ( 15 ) ===================================
+const fn15 = (arr) => {
+  for (let i = 0; i < arr.length; i++) {
+    for (let j = 0; j < arr.length - i - 1; j++) {
+      if (arr[j] > arr[j + 1]) {
+        // Elementlarni joyini almashtirish
+        let temp = arr[j];
+        arr[j] = arr[j + 1];
+        arr[j + 1] = temp;
+      }
+    }
+  }
+  return arr;
+};
 
+console.log(fn15([2, 4, 1, 5]));
