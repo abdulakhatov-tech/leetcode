@@ -32,4 +32,23 @@ const fn2 = (arr) => {
     return arr;
 }
 
-console.log(fn2([0,0,1,0,2,3,4]));
+// console.log(fn2([0,0,1,0,2,3,4]));
+
+// #3
+const fn3 = (arr) => {
+    let min = arr[0];
+    let maxProfit = 0;
+
+    arr.forEach((price) => {
+        if(price < min) {
+            min = price;
+        } else if(price - min > maxProfit) {
+            maxProfit = price - min
+        }
+    })
+
+    return maxProfit
+}
+
+// console.log(fn3([7, 1, 5, 3, 6, 4]))
+// console.log(fn3([7, 6, 4, 3, 1]))
