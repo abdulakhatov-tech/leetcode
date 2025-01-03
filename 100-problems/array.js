@@ -17,3 +17,19 @@ const fn1 = (arr) => {
 
 // console.log(fn1([1,2,3,4]));
 
+// #2
+const fn2 = (arr) => {
+
+    arr.forEach((item, index, array) => {
+
+        if(item === 0) {
+            const findIndex = arr.indexOf(item)
+            const zero = arr.splice(findIndex, 1)[0]
+            arr.push(zero)
+        }
+    })
+
+    return arr;
+}
+
+console.log(fn2([0,0,1,0,2,3,4]));
