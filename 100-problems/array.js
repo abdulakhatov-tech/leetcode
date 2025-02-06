@@ -52,3 +52,23 @@ const fn3 = (arr) => {
 
 // console.log(fn3([7, 1, 5, 3, 6, 4]))
 // console.log(fn3([7, 6, 4, 3, 1]))
+
+const fn4 = (arr, target) => {
+    let sum = 0;
+    let result = []
+
+    for(let i = 0; i < arr.length; i++) {
+        for(let k = 0; k < arr.length; k++) {
+            sum = arr[i] + arr[k]
+            if(sum === target && i < k) {
+                result.push([i, k])
+            }
+        }
+    }
+
+    return result.length === 1 ? result[0] : result
+}
+
+// console.log(fn4([1,2,3,4], 4))
+// console.log(fn4([1,2,3,4], 5))
+// console.log(fn4([2, 7, 11, 15], 9))
