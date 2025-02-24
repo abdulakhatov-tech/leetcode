@@ -1,6 +1,6 @@
 class ListNode {
   constructor(value = 0, next = null) {
-    this.val = value;
+    this.value = value;
     this.next = next;
   }
 }
@@ -20,16 +20,18 @@ class LinkedList {
   }
 
   append(value) {
-    const node = new ListNode(value);
+    const listNode = new ListNode(value);
 
     if (this.isEmpty()) {
-      this.head = node;
+      this.head = listNode;
     } else {
       let prev = this.head;
+
       while (prev.next) {
         prev = prev.next;
       }
-      prev.next = node;
+
+      prev.next = listNode;
     }
 
     this.size++;
@@ -40,66 +42,77 @@ class LinkedList {
     let listValues = "";
 
     while (current) {
-      listValues += current.val + " ";
+      listValues += current.value + (current.next ? " -> " : "");
       current = current.next;
     }
 
-    console.log(listValues);
+    return listValues;
   }
 }
 
-const list_1 = new LinkedList();
-const list_2 = new LinkedList();
+const list1 = new LinkedList();
+const list2 = new LinkedList();
 
-list_1.append(2);
-list_1.append(4);
-list_1.append(3);
+list1.append(2);
+list1.append(4);
+list1.append(3);
 
-list_2.append(5);
-list_2.append(6);
-list_2.append(4);
+list2.append(5);
+list2.append(6);
+list2.append(4);
 
-list_1.display();
-list_2.display();
+// console.log("List1 size:", list1.getSize());
+// console.log("List2 size:", list2.getSize());
+
+console.log("List1:", list1.display());
+console.log("List2:", list2.display());
 
 const addTwoNumbers = (l1, l2) => {
-  let dummyHead = new ListNode(0);
-  let current = dummyHead;
+  let List = new ListNode(0);
+  let head = List;
+
+  let sum = 0;
   let carry = 0;
 
-  while (l1 !== null || l2 !== null || carry !== 0) {
-    let sum = carry;
+  while(l1 !== null | l2 !== null || carry !== 0) {
+    // sum = carry;
 
-    if (l1 !== null) {
-      sum += l1.val;
+    if(l1 !== null) {
+      sum += l1.value;
       l1 = l1.next;
     }
 
-    if (l2 !== null) {
-      sum += l2.val;
+    if(l2 !== null) {
+      sum += l2.value;
       l2 = l2.next;
     }
 
-    carry = Math.floor(sum / 10);
-    current.next = new ListNode(sum % 10);
-    current = current.next;
+    if(sum >= 10) {
+      carry = 1;
+      sum = sum - 10;
+    }
+
+    head.next = new ListNode(sum);
+    head = head.next;
+    sum = carry;
+    carry = 0;
   }
 
-  return dummyHead.next;
+  return List.next
 };
 
-// Fix: Pass the head nodes instead of LinkedList instances
-const result = addTwoNumbers(list_1.head, list_2.head);
+const result = addTwoNumbers(list1.head, list2.head);
 
-// Function to print the result linked list
-const printList = (head) => {
+const print = (head) => {
   let current = head;
-  let values = [];
+  let listValues = "";
+
   while (current) {
-    values.push(current.val);
+    listValues += current.value + (current.next ? " -> " : "");
     current = current.next;
   }
-  console.log(values.join(" -> "));
+
+  return listValues;
 };
 
-printList(result);
+console.log("Result:", print(result));
