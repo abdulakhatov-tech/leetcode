@@ -29,33 +29,34 @@
 // }
 
 // #2
-function longestPalindrome(str) {
-  if (!str || str.length < 2) return str;
+function longestPalindrome(s) {
+  if (!s || s.length < 2) return s;
 
-  let start = 0;
-  let maxLength = 0;
+  let longest = s[0];
 
-  const expandAroundCenter = (left, right) => {
-    while (left >= 0 && right < str.length && str[left] === str[right]) {
+  function expandAroundCenter(left, right) {
+    while (left >= 0 && right < s.length && s[left] === s[right]) {
       left--;
       right++;
     }
+    return s.slice(left + 1, right);
+  }
 
-    return right - left - 1;
-  };
+  for (let i = 0; i < s.length; i++) {
+    let oddPalindrome = expandAroundCenter(i, i);
+    let evenPalindrome = expandAroundCenter(i, i + 1);
 
-  for (let i = 0; i < str.length; i++) {
-    let length1 = expandAroundCenter(i, i);
-    let length2 = expandAroundCenter(i, i + 1);
-    let length = Math.max(length1, length2);
+    let biggerPalindrome =
+      oddPalindrome.length > evenPalindrome.length
+        ? oddPalindrome
+        : evenPalindrome;
 
-    if (length > maxLength) {
-      maxLength = length;
-      start = i - Math.floor((length - 1) / 2);
+    if (biggerPalindrome.length > longest.length) {
+      longest = biggerPalindrome;
     }
   }
 
-  return str.substring(start, start + maxLength);
+  return longest;
 }
 
 console.log(longestPalindrome("babad")); // bab
