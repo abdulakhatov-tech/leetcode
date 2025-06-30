@@ -1,30 +1,36 @@
-const lengthOfLongestSubstring = (str) => {
+function lengthOfLongestSubstring(s) {
   let arr = [];
-  let subStr = "";
+  let substr = "";
 
-  for (let i = 0; i < str.length; i++) {
-    for(let k = i; k < str.length; k++) {
-      if(!subStr.includes(str[k])) {
-        subStr += str[k] 
+  if (!s.length) {
+    return 0;
+  }
+
+  if (s.length === 1) {
+    return 1;
+  }
+
+  for (let i = 0; i < s.length; i++) {
+    for (let j = i; j < s.length; j++) {
+      if (!substr.includes(s[j])) {
+        substr += s[j];
       } else {
-        arr.push(subStr)
-        subStr = '';
-        k = str.length;
+        arr.push(substr.length);
+        substr = "";
+        break;
       }
     }
   }
-  arr.push(subStr)
 
-  let maxCount = 0;
+  return arr.sort((a, b) => b - a)[0] || 1;
+}
 
-  for(let item of arr) {
-    if(item.length > maxCount) {
-      maxCount = item.length;
-    }
-  }
-
-  return arr;
-};
+console.log(lengthOfLongestSubstring("abcabcbb")); // Output: 3
+console.log(lengthOfLongestSubstring("bbbbb")); // Output: 1
+console.log(lengthOfLongestSubstring("pwwkew")); // Output: 3
+console.log(lengthOfLongestSubstring(" ")); // Output: 1
+console.log(lengthOfLongestSubstring("ctnkh")); // Output: 5
+console.log(lengthOfLongestSubstring("jbpnbwwd")); // Output: 4
 
 console.log(lengthOfLongestSubstring("abcabcbb")); // 3
 console.log(lengthOfLongestSubstring("bbbbb")); // 1
