@@ -26,7 +26,6 @@ const intToRoman = (num) => {
     }
 
     return roman;
-
 }
 
 console.log(intToRoman(3)); // Output: "III"
