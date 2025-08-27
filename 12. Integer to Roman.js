@@ -16,16 +16,16 @@ const intToRoman = (num) => {
         [1, "I"]
     ];
 
-    let roman = "";
+    let result = "";
 
-    for (const [value, symbol] of valMap) {
-        while (num >= value) {
-            roman += symbol;
+    for(const [value, symbol] of valMap) {
+        while(num >= value) {
+            result += symbol;
             num -= value;
         }
-    }
+    } 
 
-    return roman;
+    return result;
 }
 
 console.log(intToRoman(3)); // Output: "III"
